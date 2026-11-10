@@ -1,0 +1,17 @@
+# Build outputs
+.vs/
+[Bb]in/
+[Oo]bj/
+out/
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files
+.vs/
+*.user
+*.suo
+output.html
+
+# OS-generated files
+.DS_Store

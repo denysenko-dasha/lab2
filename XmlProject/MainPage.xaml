@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XmlProject.MainPage"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Button Text="Вибрати XML-файл" Clicked="OnSelectXmlClicked" />
+            <Label x:Name="FilePathLabel" Text="Файл не вибрано" FontAttributes="Italic" />
+
+            <Label Text="Фільтр:" FontAttributes="Bold" FontSize="16"/>
+
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto" RowSpacing="10" ColumnSpacing="10">
+                <Label Text="Факультет:" Grid.Row="0" Grid.Column="0" VerticalOptions="Center"/>
+                <Picker x:Name="FacultyPicker" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Тематика:" Grid.Row="2" Grid.Column="0" VerticalOptions="Center"/>
+                <Picker x:Name="TopicPicker" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Курси, на які орієнтовано:" Grid.Row="3" Grid.Column="0" VerticalOptions="Center"/>
+                <Picker x:Name="TargetCoursesPicker" Grid.Row="3" Grid.Column="1"/>
+
+                <Label Text="П.І.П. керівника:" Grid.Row="4" Grid.Column="0" VerticalOptions="Center"/>
+                <Picker x:Name="CuratorPicker" Grid.Row="4" Grid.Column="1"/>
+            </Grid>
+
+            <Label Text="Аналіз за допомогою:" FontAttributes="Bold" FontSize="16"/>
+            <HorizontalStackLayout Spacing="20">
+                <RadioButton x:Name="SaxRadio" Content="SAX API" IsChecked="True"/>
+                <RadioButton x:Name="DomRadio" Content="DOM API"/>
+                <RadioButton x:Name="LinqRadio" Content="LINQ to XML"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button Text="Search" Clicked="OnSearchClicked" WidthRequest="100"/>
+                <Button Text="Clear" Clicked="OnClearClicked" WidthRequest="100" BackgroundColor="Red" TextColor="White"/>
+                <Button Text="Transform to HTML" Clicked="OnTransformHtmlClicked"/>
+            </HorizontalStackLayout>
+
+            <Editor x:Name="OutputEditor" IsReadOnly="True" HeightRequest="250" AutoSize="Disabled"/>
+
+            <Button Text="Вихід з програми" Clicked="OnExitClicked" BackgroundColor="DarkGray" Margin="0,20,0,0"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

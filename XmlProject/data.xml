@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Clubs>
+      <Club Name="Книжковий клуб" 
+            Faculty="ФКНК" 
+            Department="Культурний" 
+            Time="вівторок о 15:00" 
+            HeadStudentName="Петренко А.А." 
+            HeadStudentCourse="3" 
+            TargetCourses="1" 
+            Topic="Дискусія по книзі" 
+            CuratorName="Василенко П.П." 
+            IsTeacher="Так" />
+
+  
+      <Club Name="Веб-розробка" 
+            Faculty="ННІВ" 
+            Department="Науковий" 
+            Time="понеділок 16:30" 
+            HeadStudentName="Шевченко О.М." 
+            TargetCourses="1,2" 
+            Topic="Створення сайту" 
+            CuratorName="Василенко В.В." />
+
+  
+      <Club Name="Англійський клуб" 
+            Faculty="ФКНК" 
+            Department="Культурний" 
+            Time="субота 14:00" 
+            HeadStudentName="Коваленко В.О." 
+            HeadStudentCourse="4" 
+            TargetCourses="3,4" 
+            Topic="Розмова на тему довкілля" 
+            CuratorName="Григоренко Г.Г." />
+
+      <Club Name="Кіно клуб" 
+            Faculty="ФКНК" 
+            Department="Культурний" 
+            Time="субота 14:00" 
+            HeadStudentName="Біленко В.О." 
+            HeadStudentCourse="4" 
+            TargetCourses="1,3,4" 
+            Topic="Перегляд фільму" 
+            CuratorName="Григоренко Г.Г." />
+</Clubs>
